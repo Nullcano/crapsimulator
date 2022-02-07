@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crapsimulator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="spillebrett">
+    <header> 
+      <h1>Crapsimulator</h1>
+      <div class="buttons">
+        <button class="roll">Spill 1 runde</button>
+        <button class="simulate">Spill 10 000 runder</button>
+      </div>
+    </header>
+    <section id="table">
+      <div class="topplinje row">
+        <div>Runde</div>
+        <div>T.1</div>
+        <div>T.2</div>
+        <div>Sum</div>
+        <div>Resultat</div>
+      </div>
+      <div id="rounds-list">
+      </div>
+    </section>
+    <footer>
+      <div id="info">
+        <p>Du har tapt <span class="lost">0</span> og vunnet <span class="won">0</span> runde(r) &mdash; <span class="won-perc">0</span>% vinn-ratio</p>
+        <p>Du har satt point <span class="point">0</span> gang(er) og har vunnet <span class="point-won">0</span> av dem &mdash; <span class="point-won-perc">0</span>% vinn-ratio</p>
+        <p>Snake eyes (1 + 1): <span class="snake-eyes">0</span></p>
+      </div>
+    </footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
